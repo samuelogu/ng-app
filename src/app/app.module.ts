@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { RootedComponent } from './rooted/rooted';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent, RootedComponent, NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [RootedComponent]

@@ -6,12 +6,24 @@ import { Injectable } from '@angular/core';
 })
 export class PostService {
 
+  url:string = 'https://jsonplaceholder.typicode.com';
+
   constructor(private http: HttpClient) { }
 
-  fetchPost() {
+  get() {
+    return this.http.get(`${this.url}/posts`)
+  }
+
+  create() {
 
   }
 
-  
+  update() {
+
+  }
+
+  remove() {
+
+  }
 
 }
